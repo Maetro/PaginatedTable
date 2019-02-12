@@ -10,13 +10,16 @@ import com.ramoncasares.paginatedtable.model.user.repository.UserRepository;
 import com.ramoncasares.paginatedtable.service.user.dto.UserDTO;
 import com.ramoncasares.paginatedtable.service.user.mapper.UserMapper;
 import com.ramoncasares.paginatedtable.service.user.service.UserService;
+import com.ramoncasares.paginatedtable.service.user.service.UserServiceImpl;
 import com.ramoncasares.paginatedtable.util.PaginatedTableTestsUtils;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.annotation.Bean;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,6 +31,16 @@ import static org.mockito.Mockito.when;
 
 @DisplayName("User Service Unit Tests")
 public class UserServiceUnitDataTest extends ServiceUnitDataTests {
+
+    @TestConfiguration
+    static class UserServiceUnitDataTestContextConfiguration {
+
+        @Bean
+        public UserService userService(UserRepository userRepository, RoleRepository roleRepository,
+                                       TableFilterRepository userTableFilterRepository) {
+            return new UserServiceImpl(userRepository, roleRepository, userTableFilterRepository);
+        }
+    }
 
     private final Logger logger = LoggerFactory.getLogger(UserServiceUnitDataTest.class);
 

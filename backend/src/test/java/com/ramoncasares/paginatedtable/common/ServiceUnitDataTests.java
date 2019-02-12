@@ -23,14 +23,4 @@ public abstract class ServiceUnitDataTests {
 
     protected abstract void initializeBeforeEachTest();
 
-    @TestConfiguration
-    static class ServiceUnitDataTestsContextConfiguration {
-
-        @Bean
-        public UserService userService(UserRepository userRepository, RoleRepository roleRepository,
-                                       TableFilterRepository userTableFilterRepository) {
-            return new UserServiceImpl(userRepository, roleRepository, userTableFilterRepository);
-        }
-    }
-
 }
