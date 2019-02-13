@@ -1,0 +1,54 @@
+table {
+  width: 100%;
+
+  .mat-row:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+
+  .arrow {
+    position: relative;
+    display: inline-block;
+  }
+
+  .actionButton {
+    float: left;
+    padding: 5px;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+    margin-right: 2px;
+  }
+
+  ::ng-deep {
+
+    .mat-header-cell {
+      max-width: 120px;
+    }
+
+    .mat-form-field-infix {
+      top: 5px;
+    }
+
+    .mat-form-field-underline {
+      bottom: 10px;
+    }
+
+    .mat-sort-header-container {
+      margin-left: 5px;
+    }
+
+    .mat-form-field-label {
+      font-size: 14px;
+    }
+
+    .mat-form-field {
+      width: 110px;
+    }
+  }
+
+
+
+}

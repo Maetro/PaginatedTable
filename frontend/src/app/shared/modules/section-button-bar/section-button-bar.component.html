@@ -1,0 +1,16 @@
+<ul class="topButtonList p-0 m-0">
+  <li class="topButtonElement" *ngFor="let button of buttons">
+    <button *ngIf="!button.isBack && !button.emitString && isAccesible(button)" [class]="button.class" [routerLink]="button.route"
+      [routerLinkActive]="button.routeLinkActive" [routerLinkActiveOptions]="{exact: true}">
+      <em [class]="button.icon"></em> {{button.text | translate}}
+    </button>
+    <button *ngIf="button.isBack" [class]="button.class" (click)="back()" [routerLinkActive]="button.routeLinkActive"
+    [routerLinkActiveOptions]="{exact: true}">
+      <em [class]="button.icon"></em> {{button.text | translate}}
+    </button>
+    <button *ngIf="!button.isBack && button.emitString && isAccesible(button)" [ngClass]="{ 'active' : isActive(button.activeValue) }" [class]="button.class"
+      (click)="emit(button.emitString)" [routerLinkActive]="button.routeLinkActive" [routerLinkActiveOptions]="{exact: true}">
+      <em [class]="button.icon"></em> {{button.text | translate}}
+    </button>
+  </li>
+</ul>

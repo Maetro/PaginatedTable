@@ -1,0 +1,99 @@
+ul.topButtonList {
+  padding-inline-start: 15px;
+}
+
+.topButtonList li.topButtonElement {
+  float: left;
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+button.topButton {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 0px;
+  background: white;
+  border: 1px solid #eaeaea;
+  &:hover{
+    background-color: #eaeaea;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+i.fa {
+  margin-right: 5px;
+}
+
+@media (min-width: 576px) {
+  .card-deck .card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+button.smallbtn {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  width: 32px;
+  float: left;
+  cursor: pointer;
+}
+
+.smallbtn i.fa {
+  color: black;
+}
+
+.btn-bar {
+  color: #000000;
+}
+
+.btn-bar:hover,
+.btn-bar:focus,
+.btn-bar:active,
+.btn-bar.active,
+.open .dropdown-toggle.btn-bar {
+  color: #ffffff;
+  background-color: #787878;
+}
+
+.btn-bar:active,
+.btn-bar.active,
+.open .dropdown-toggle.btn-bar {
+  background-image: none;
+}
+
+.btn-bar .badge {
+  color: #b3b3b3;
+  background-color: #ffffff;
+}
+
+.btn-bar-back {
+  color: #000000;
+  background-color: #b3b3b3;
+}
+
+.btn-bar-back:hover,
+.btn-bar-back:focus,
+.btn-bar-back:active,
+.btn-bar-back.active,
+.open .dropdown-toggle.btn-bar-back {
+  color: #ffffff;
+  background-color: #b3b3b3;
+}
+
+.btn-bar-back:active,
+.btn-bar-back.active,
+.open .dropdown-toggle.btn-bar-back {
+  background-image: none;
+}
+
+
+.btn-bar-back .badge {
+  color: #b3b3b3;
+  background-color: #ffffff;
+}
