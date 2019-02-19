@@ -1,0 +1,28 @@
+{
+	"PAGINATOR": {
+		"FIRST": "First page",
+		"ITEMS_PAGE": "Elements per page",
+		"LAST": "Last page",
+		"NEXT": "Next page",
+		"OF": " of ",
+		"PREVIOUS": "Previous page"
+	},
+	"TITLE": {
+		"ADMIN": {
+			"ACTIVE_USERS": "Active",
+			"DELETED_USERS": "Deleted",
+			"NEW_USER": "New user",
+			"PENDING_USERS": "Pending"
+		}
+	},
+	"USERS": {
+		"ACTION": "Actions",
+		"BIRTHDATE": "Birthdate",
+		"ID": "Id",
+		"NAME": "Name",
+		"NUMBER_OF_CHILDREN": "Number of children",
+		"ROLES": "Roles",
+		"SCORE": "Score",
+		"SURNAME": "Surname"
+	}
+}

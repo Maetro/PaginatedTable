@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TranslateModule } from '../translate/translate.module';
+import { TranslateModule } from '@ngx-translate/core';
 import { SectionButtonBarComponent } from './section-button-bar.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    TranslateModule,
+    TranslateModule.forChild({}),
   ],
   declarations: [SectionButtonBarComponent],
   exports: [SectionButtonBarComponent],

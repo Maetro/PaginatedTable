@@ -1,0 +1,28 @@
+{
+	"PAGINATOR": {
+		"FIRST": "Primera página",
+		"ITEMS_PAGE": "Elementos por página",
+		"LAST": "Última página",
+		"NEXT": "Siguiente página",
+		"OF": " de ",
+		"PREVIOUS": "Página anterior"
+	},
+	"TITLE": {
+		"ADMIN": {
+			"ACTIVE_USERS": "Activos",
+			"DELETED_USERS": "Borrados",
+			"NEW_USER": "Nuevo usuario",
+			"PENDING_USERS": "Pendientes"
+		}
+	},
+	"USERS": {
+		"ACTION": "Acciones",
+		"BIRTHDATE": "Fecha de nacimiento",
+		"ID": "Id",
+		"NAME": "Nombre",
+		"NUMBER_OF_CHILDREN": "Número de hijos",
+		"ROLES": "Roles",
+		"SCORE": "Puntos",
+		"SURNAME": "Apellidos"
+	}
+}

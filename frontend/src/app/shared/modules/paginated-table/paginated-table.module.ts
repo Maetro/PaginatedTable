@@ -2,7 +2,6 @@ import { CommonModule, DatePipe } from '@angular/common';
 import { NgModule } from '@angular/core';
 // tslint:disable-next-line:max-line-length
 import { MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, MatPaginatorIntl, MatPaginatorModule, MatSortModule, MatTableModule } from '@angular/material';
-import { TranslateModule } from '../translate/translate.module';
 import { PaginatedTableComponent } from './paginated-table.component';
 import { MatPaginatorIntlTranslation } from './translation/mat-paginator-intl-translation';
 
@@ -15,8 +14,7 @@ import { MatPaginatorIntlTranslation } from './translation/mat-paginator-intl-tr
     MatButtonModule,
     MatIconModule,
     MatInputModule,
-    MatFormFieldModule,
-    TranslateModule,
+    MatFormFieldModule
   ],
   declarations: [PaginatedTableComponent],
   providers: [DatePipe, { provide: MatPaginatorIntl, useClass: MatPaginatorIntlTranslation}],

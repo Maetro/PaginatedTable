@@ -2,8 +2,8 @@ import { DatePipe } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { MatPaginator, MatSort, MatTable, MatTableDataSource } from '@angular/material';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import * as _ from 'lodash';
-import { TranslateService } from '../translate/translate.service';
 // tslint:disable-next-line:max-line-length
 import { PaginatedFilter, PaginatedFilterResponse, PaginatedSearchService, SortStatus, TableAction, TableColumn } from './service/paginated-search-service';
 

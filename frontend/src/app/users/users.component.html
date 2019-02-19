@@ -1,17 +1,19 @@
-<div class="row">
-  <div class="col-xs-12 col-xl-6">
-    <app-section-button-bar class="pull-left mr-0" [buttons]="leftbuttons"></app-section-button-bar>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-xl-6">
+      <app-section-button-bar class="pull-left mr-0" [buttons]="leftbuttons"></app-section-button-bar>
+    </div>
+    <div class="col-xs-12 col-xl-6">
+      <app-section-button-bar class="p-0 m-0 pull-right" [buttons]="rightbuttons"></app-section-button-bar>
+    </div>
   </div>
-  <div class="col-xs-12 col-xl-6">
-    <app-section-button-bar class="p-0 m-0 pull-right" [buttons]="rightbuttons"></app-section-button-bar>
-  </div>
-</div>
-<div class="card-deck">
-  <div class="card col-lg-12 px-0 mb-4">
-    <div class="card-body">
-      <app-paginated-table [endPoint]="endPoint" [columnInfo]="columnInfo" [displayedColumns]="displayedColumns" [resultList]="tableTasks" [tableActions]="tableActions"
-        (executeActionEvent)="executeAction($event)">
-      </app-paginated-table>
+  <div class="card-deck">
+    <div class="card col-lg-12 px-0 mb-4">
+      <div class="card-body">
+        <app-paginated-table [endPoint]="endPoint" [columnInfo]="columnInfo" [displayedColumns]="displayedColumns" [resultList]="tableTasks" [tableActions]="tableActions"
+          (executeActionEvent)="executeAction($event)">
+        </app-paginated-table>
+      </div>
     </div>
   </div>
 </div>
