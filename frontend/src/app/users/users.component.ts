@@ -25,8 +25,8 @@ export class UsersComponent implements OnInit {
     { key: 'score', value: this.translateService.instant('USERS.SCORE') },
     { key: 'roles', value: this.translateService.instant('USERS.ROLES'), display: (user: User, roles: Role[]) => {
       return this.displayRolesOfUser(roles);
-    }    },
-    { key: 'action', value: this.translateService.instant('USERS.ACTION'), isSortable: false }];
+    }, isSortable: false},
+    { key: 'action', value: this.translateService.instant('USERS.ACTION.NAME'), isSortable: false, isSearchable: false}];
   serverUrl = environment.serverUrl;
   endPoint: string;
   displayedColumns: string[] = ['id', 'name', 'surname', 'birthdate', 'numberOfChildren', 'score', 'roles', 'action'];
@@ -36,6 +36,7 @@ export class UsersComponent implements OnInit {
   constructor(private translateService: TranslateService) { }
 
   ngOnInit() {
+    this.endPoint = this.serverUrl + 'user/filter';
   }
 
   private displayRolesOfUser(roles: Role[]) {

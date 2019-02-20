@@ -12,6 +12,10 @@ table {
   .arrow {
     position: relative;
     display: inline-block;
+
+    &.hidden {
+      display: none !important;
+    }
   }
 
   .actionButton {

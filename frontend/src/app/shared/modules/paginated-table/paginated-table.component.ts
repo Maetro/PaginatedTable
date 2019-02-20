@@ -16,8 +16,6 @@ export class PaginatedTableComponent implements OnInit {
 
   @Input() endPoint: string;
 
-  @Input() resultList: any[];
-
   @Input() columnInfo: TableColumn[];
 
   @Input() displayedColumns: string[];
@@ -33,6 +31,7 @@ export class PaginatedTableComponent implements OnInit {
   filters = new Map();
   numberOfElements: number;
   searchQuery: string;
+  resultList: any[];
   dataSource = new MatTableDataSource<any>(this.resultList);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
