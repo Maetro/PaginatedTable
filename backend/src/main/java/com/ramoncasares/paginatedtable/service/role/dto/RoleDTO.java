@@ -1,6 +1,7 @@
 package com.ramoncasares.paginatedtable.service.role.dto;
 
 import com.ramoncasares.paginatedtable.model.user.entity.UserEntity;
+import com.ramoncasares.paginatedtable.service.user.dto.UserDTO;
 import lombok.*;
 
 import javax.persistence.*;
@@ -15,7 +16,7 @@ import java.util.List;
 public class RoleDTO implements Serializable {
 
     private Long id;
-    private List<UserEntity> users;
+    private List<UserDTO> users;
     private String name;
 
 }

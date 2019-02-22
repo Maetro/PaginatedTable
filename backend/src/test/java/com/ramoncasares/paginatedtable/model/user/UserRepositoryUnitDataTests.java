@@ -31,6 +31,8 @@ public class UserRepositoryUnitDataTests extends RepositoryUnitDataTests {
 
     @Override
     protected void initializeBeforeEachTest() {
+        userRepository.deleteAll();
+        roleRepository.deleteAll();
         this.roles = new ArrayList<>();
         RoleEntity r1 = new RoleEntity();
         r1.setName("Role 1");
